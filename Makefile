@@ -19,5 +19,5 @@ migrate-down:
 # Reload server when file changes.
 # go install github.com/cespare/reflex@latest
 # See: https://github.com/cespare/reflex
-reflex:
+reload:
 	@reflex -g '*.go' -s -- sh -c 'make run'
