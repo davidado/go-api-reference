@@ -16,7 +16,7 @@ migrate-up:
 migrate-down:
 	@go run cmd/migrate/main.go down
 
-# Reload server when file changes.
+# Reload server when file changes are detected.
 # go install github.com/cespare/reflex@latest
 # See: https://github.com/cespare/reflex
 reload:
