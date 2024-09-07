@@ -15,3 +15,9 @@ migrate-up:
 
 migrate-down:
 	@go run cmd/migrate/main.go down
+
+# Reload server when file changes.
+# go install github.com/cespare/reflex@latest
+# See: https://github.com/cespare/reflex
+reflex:
+	@reflex -g '*.go' -s -- sh -c 'make run'
